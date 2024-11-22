@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/user/repo.git'
+                git branch: 'master', url: 'https://github.com/shivanshsehrawat/Demo1.git'
             }
         }
         stage('Build') {
